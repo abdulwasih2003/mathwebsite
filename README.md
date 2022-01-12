@@ -88,6 +88,7 @@ h1{
     color: rgb(245, 240, 240);
 }
     </style>
+    
 </head>
 <body>
     <div class="container">
@@ -96,7 +97,7 @@ h1{
             <form>
                 <div class=formelement>
                     <lable for="aedit">Base:</lable>
-                    <input type="number" id="aedit" value="0">
+                    <input type="text" id="aedit" value="0">
                     <lable for="aedit">Meters</lable>
                 </div><br>
                 <div class=formelement>
@@ -117,6 +118,21 @@ h1{
                 </div>
             </form>
         </div>
+        <script>
+            function validate() {
+                var user1=document.getElementsById("aedit").value;
+                var user1=document.getElementsById("bedit").value;
+                var re= /^\d+$/;
+                if(re.test(user1)){
+                    return true
+                }
+                else{
+                    alert("Enter a valid input");
+                    user2.style.border="red solid 3px";
+                    return false;
+                }
+            }
+        </script>
         <script type="text/javascript">
             var button;
             button=document.querySelector("#calbutton");
@@ -162,6 +178,21 @@ h1{
     
             </div>
         </div>
+        <script>
+            function validate() {
+                var user1=document.getElementsById("radiusedit").value;
+                var user1=document.getElementsById("heightedit").value;
+                var re= /^\d+$/;
+                if(re.test(user1)){
+                    return true
+                }
+                else{
+                    alert("Enter a valid input");
+                    user2.style.border="red solid 3px";
+                    return false;
+                }
+            }
+        </script>
         <script type="text/javascript">
           var button;
           button=document.querySelector("#calbutton");
