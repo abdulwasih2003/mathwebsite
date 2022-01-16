@@ -50,7 +50,7 @@ Publish the website in the given URL.
         }
         body{
             background-color: black;
-            color:yelloww;
+            color:black;
         }
         .container{
             width: 1080px;
